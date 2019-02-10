@@ -12,7 +12,10 @@ console.log('did it');
 
  const callback = (response) => {
     console.log('In response handler callback!');
-    console.log('Response:', response);
+    response.on('data', function(chunk) {
+        console.log('[-- CHUNK OF LENGTH ' + chunk.length + ' --]');
+        console.log(chunk.toString());
+      });
  };
 
  console.log('Making request!');
