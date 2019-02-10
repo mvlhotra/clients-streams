@@ -6,8 +6,8 @@ console.log('did it');
 // http request:
 
  const options = {
-     host: 'www.nikmal.co',
-     path: '/'
+     host: 'stream-large-file.herokuapp.com',
+     path: '/give-me-stuff-now'
  };
 
  const callback = (response) => {
